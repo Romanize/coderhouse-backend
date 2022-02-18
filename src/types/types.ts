@@ -15,3 +15,10 @@ export interface IBooks {
   name: string,
   author: string,
 }
+
+export interface IProducts {
+  title: string,
+  thumbnail: string,
+  price: number,
+  id?: number,
+}
