@@ -58,6 +58,25 @@ class Container {
     }
   }
 
+  updateById = async (id: number, data: Partial<IProducts>): Promise<IProducts | undefined> => {
+    try {
+      const response = await this.getAll();
+      if (!response) throw new Error ('Could not get the file: ' + this.name);
+
+      const index = response.findIndex(element => element.id === id);
+      if (index === -1) throw new Error (`The element with id ${id} does not exist`);
+
+      if (index >= 0) {
+        response[index] = { ...response[index], ...data };
+        await fs.promises.writeFile(this.url, JSON.stringify(response, null, 2))
+      }
+
+      return response[index];
+    } catch (e) {
+      if (e instanceof Error) Logger.error('Container.getById ' + e.message);
+    }
+  }
+
   deleteAll = async (): Promise<void> => {
     try {
       const response = await this.getAll();  
@@ -69,7 +88,7 @@ class Container {
     }
   }
 
-  deleteById = async (id: number): Promise<void> => {
+  deleteById = async (id: number): Promise<boolean> => {
     try {
       const response = await this.getAll();  
       if (!response) throw new Error ('Could not get the file: ' + this.name);
@@ -81,8 +100,10 @@ class Container {
         response.splice(index, 1);
         await fs.promises.writeFile(this.url, JSON.stringify(response, null, 2))
       }
+      return true;
     } catch (e) {
       if (e instanceof Error) Logger.error('Container.deleteById ' + e.message);
+      return false;
     }
   }
 }

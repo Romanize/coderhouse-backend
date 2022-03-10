@@ -1,6 +1,6 @@
 const ERRORS = {
   'SERVER_ERROR': {
-    coder: 3000,
+    code: 3000,
     message: 'An error has occured on server'
   },
   'DOCUMENT_NOT_FOUND': {

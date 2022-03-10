@@ -1,9 +1,23 @@
 import { Router } from "express";
-import { getProducts, getRandomProduct } from "../controllers/products";
+import {
+  deleteProduct,
+  getProducts,
+  getRandomProduct,
+  getSingleProduct,
+  saveProduct,
+  updateProduct,
+} from "../controllers/products";
 
 const router = Router();
 
-router.get('/products', getProducts)
-router.get('/randomProduct', getRandomProduct)
+router.get("/", getProducts);
+router.get("/random", getRandomProduct);
+router.get("/:id", getSingleProduct);
+
+router.post("/", saveProduct);
+
+router.put("/:id", updateProduct);
+
+router.delete("/:id", deleteProduct);
 
 export default router;

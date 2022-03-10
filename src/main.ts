@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { urlencoded } from 'express';
 import { AddressInfo } from 'net';
 import config from './config';
 import router from './router/api';
@@ -6,7 +6,9 @@ import Logger from './service/LoggerService';
 
 const app = express();
 
-app.use('/', router)
+app.use(express.urlencoded())
+app.use(express.json())
+app.use('/api/products', router)
 
 const server = app.listen(config.APP_PORT, () => {
   const { port } = server.address() as AddressInfo
