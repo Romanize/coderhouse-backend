@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce</title>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <main>
+    <form id="product-form">
+      <input type="text" name="name">
+      <input type="text" name="price">
+      <input type="text" name="url">
+      <input type="submit" value="Crear producto">
+    </form>
+    <section id="products-box">
+
+    </section>
+    <section id="message-box">
+
+    </section>
+    <form id="message-form">
+      <input type="text" name="email"/>
+      <input type="text" name="message"/>
+      <input type="submit" value="Enviar mensaje">
+    </form>
+  </main>
+</body>
+</html>
