@@ -10,23 +10,22 @@ socket.on("previousMessages", (data) => {
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('message');
     messageDiv.innerHTML = `
-      <p class="meta">${message.email} - ${message.date}</p>
+      <p class="meta text-primary fw-bold">${message.email} - ${message.date}</p>
       <p class="text">${message.message}</p>
     `;
     messageBox.appendChild(messageDiv);
   });
 });
 
-function sendMessage (e){
+const form = document.querySelector('#message-form');
+form.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = e.target.email.value;
   const message = e.target.message.value;
   const date = new Date();
   socket.emit('message', { email, message, date });
-}
-
-const form = document.querySelector('#message-form');
-form.addEventListener('submit', sendMessage);
+  e.target.message.value = '';
+});
 
 // PRODUCTS
 
