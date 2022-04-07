@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Samsung Galaxy S20",
+    "pictureUrl": "https://picsum.photos/200",
+    "price": 400,
+    "id": 1,
+    "timestamp": 123123123123,
+    "stock": 30,
+    "code": "A2050",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "name": "Iphone 11 Pro",
+    "pictureUrl": "https://picsum.photos/200",
+    "price": 750,
+    "id": 2,
+    "stock": 13,
+    "timestamp": 123123123123,
+    "code": "A3940",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "name": "Iphone 8 Plus",
+    "pictureUrl": "https://picsum.photos/200",
+    "price": 300,
+    "id": 3,
+    "code": "A12390",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "timestamp": 123123123123,
+    "stock": 8
+  },
+  {
+    "name": "Iphone 12 Pro",
+    "pictureUrl": "https://picsum.photos/200",
+    "price": 1300,
+    "id": 4,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "timestamp": 123123123123,
+    "stock": 12,
+    "code": "A1432"
+  },
+  {
+    "name": "Macbook Pro",
+    "price": 2500,
+    "pictureUrl": "asidjoaisdjiuoasdj",
+    "id": 5,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "timestamp": 123123123123,
+    "stock": 5,
+    "code": "MC234B"
+  }
+]
